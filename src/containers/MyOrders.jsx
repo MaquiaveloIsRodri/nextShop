@@ -38,11 +38,13 @@ const MyOrder = () => {
 					</p>
 					<p>$ {sumTotal()}</p>
 				</div>
+				<button className={styles.button} onClick={()=>clickCloseOrder()}>
 				<Link
 					href="/checkout"
 				>
 					Checkout
 				</Link>
+				</button>
 			</div>
 		</aside>
 	);

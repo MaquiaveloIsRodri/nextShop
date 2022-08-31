@@ -4,7 +4,12 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 24px;
+	background-color: white;
 	border-bottom: 1px solid (--very-light-pink);
+	top:0px;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
 }
 .menu {
 	display: none;

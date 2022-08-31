@@ -5,9 +5,9 @@
 	padding: 24px;
 	box-sizing: border-box;
 	position: fixed;
-	right: 0;
 	background-color: white;
 	top: 60px;
+	right: 0;
 	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid $--very-light-pink;
@@ -85,9 +85,20 @@
 //1	font-weight: bold;
 //1	height: 50px;
 }
+.button{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+}
 @media (max-width: 640px) {
 	.MyOrder {
+		position: absolute;
+		right: -10px;
+		height: 500px;
 		width: 100%;
+	}
+	.MyOrder a {
+		margin-bottom: 30px;
 	}
 }
 @keyframes swipeLeft {

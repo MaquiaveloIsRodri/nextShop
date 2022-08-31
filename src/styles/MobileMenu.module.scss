@@ -44,6 +44,10 @@
     font-size: $--sm;
     color: $--hospital-green !important;
 }
+.button{
+    background-color: transparent;
+    border: none;
+}
 
 @keyframes swipeDown {
     0% {

@@ -5,10 +5,15 @@ import Image from 'next/image';
 import styles from '@styles/Checkout.module.scss';
 
 const Checkout = () => {
-  const { state } = useContext(AppContext);
+  const { state} = useContext(AppContext);
   const day = new Date().getDate();
   const month = new Date().getMonth();
   const year = new Date().getFullYear();
+  const sumTotal = () => {
+		const reducer = (accu, value) => accu + value.price;
+		const sum = state.cart.reduce(reducer, 0);
+		return sum;
+	};
   return (
     <>
       <Head>
@@ -44,7 +49,7 @@ const Checkout = () => {
                 </span>
                 <span>{state.cart.length}</span>
               </p>
-              <p>$560.00</p>
+              <p>${sumTotal()}</p>
             </div>
             <button className={styles['login-button']}>To Pay</button>
           </div>
