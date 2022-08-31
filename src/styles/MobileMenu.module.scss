@@ -1,0 +1,56 @@
+@import './vars';
+
+.mobileMenu {
+    padding: 24px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #ffffff;
+    border: 1px solid $--very-light-pink;
+    border-radius: 6px;
+    animation: swipeDown 0.26s ease;
+}
+
+.mobileMenu a {
+    text-decoration: none;
+    color: $--black;
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+}
+
+.mobileMenu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.mobileMenu ul:nth-child(1) {
+    border-bottom: 1px solid $--very-light-pink !important;
+}
+
+.mobileMenu ul li {
+    margin-bottom: 24px;
+}
+
+.email {
+    font-size: $--sm;
+    font-weight: 300 !important;
+}
+
+.sign-out {
+    font-size: $--sm;
+    color: $--hospital-green !important;
+}
+
+@keyframes swipeDown {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
