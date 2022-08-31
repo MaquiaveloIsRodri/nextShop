@@ -31,16 +31,16 @@ const MobileMenu = () => {
 
                 <ul>
                 <li>
-                    <Link href="/account">My account</Link>
+                    <Link href="/My-account">My account</Link>
                 </li>
                 </ul>
 
                 <ul>
                 <li>
-                    <Link href="/account" className={styles['email']}>matiaschiodo@gmail.com</Link>
+                    <Link href="/My-account" className={styles['email']}>matiaschiodo@gmail.com</Link>
                 </li>
                 <li>
-                    <Link href="/signup" className={styles['sign-out']}>Sign out</Link>
+                    <Link href="/sign-up" className={styles['sign-out']}>Sign out</Link>
                 </li>
             </ul>
         </div>
